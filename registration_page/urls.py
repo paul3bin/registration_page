@@ -21,5 +21,6 @@ from registration_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'register', include('registration_app.urls')),
-    url(r'^$', views.index, name='index')
+    url(r'^$', views.index, name='index'),
+    url(r'^thankyou/',views.thanks, name='thankyou')
 ]
