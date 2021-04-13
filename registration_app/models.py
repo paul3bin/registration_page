@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+
 class RegisterUser(models.Model):
     first_name = models.CharField(max_length=80)
     last_name = models.CharField(max_length=80)
